@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="calculator-icon-8182.png" size="180*180" />
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <script src="calc.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <img src="calculator-icon-8182.png"/>
+        <p>Calculator</p>
+    </header>
+
+    <section id="body">
+        <main id="calculator">
+            <section id="res">
+              <div id="screen">
+                <div class="screenLast" id="lastOperationScreen" type="text"></div>
+                <div class="screenCurrent" id="currentOperationScreen">0</div>
+              </div>
+            </section>
+      
+            <section id="allButtons">
+              <section id="row1">
+                <button class="clear" data-type="reset" onclick="this.blur();">AC</button>
+                <button id="delete" data-type="reset" onclick="this.blur();">Del</button>
+                <button id="percent" data-type="operator" value="%" onclick="this.blur();">&#37</button>
+                <button id="buttonide" data-type="operator" value="/" onclick="this.blur();">&#247</button>
+              </section>
+      
+              <section id="row2">
+                <button id="1" data-type="number" value="1" onclick="this.blur();">1</button>
+                <button id="2" data-type="number" value="2" onclick="this.blur();">2</button>
+                <button id="3" data-type="number" value="3" onclick="this.blur();">3</button>
+                <button id="times" data-type="operator" value="*" onclick="this.blur();">&#215</button>
+              </section>
+      
+              <section id="row2">
+                <button id="4" data-type="number" value="4" onclick="this.blur();">4</button>
+                <button id="5" data-type="number" value="5" onclick="this.blur();">5</button>
+                <button id="6" data-type="number" value="6" onclick="this.blur();">6</button>
+                <button id="minus" data-type="operator" value="-" onclick="this.blur();">&#45</button>
+              </section>
+      
+              <section id="row2">
+                <button id="7" data-type="number" value="7" onclick="this.blur();">7</button>
+                <button id="8" data-type="number" value="8" onclick="this.blur();">8</button>
+                <button id="9" data-type="number" value="9" onclick="this.blur();">9</button>
+                <button id="plus" data-type="operator" value="+" onclick="this.blur();">&#43</button>
+              </section>
+      
+              <section id="row2">
+                <button id="0" class="zero" data-type="number" value="0" onclick="this.blur();">0</button>
+                <button id="point" data-type="decimal" value="." onclick="this.blur();">.</button>
+                <button id="equals" class="equal" data-type="equal" value="=" onclick="this.blur();">&#61</button>
+              </section>
+            </section>
+          </main>
+
+    <footer>
+      &copy;&nbsp;
+      <p class="name">OluwaseyiEmiolaAjayi</p>
+      <h1>|</h1>
+      <a href="https://github.com/EmiolaAjayi" class="github">Github</a>
+    </footer>
+</section>
+  </body>
+</html>
